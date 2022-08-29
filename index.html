@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <!--Шапка сайта--> 
+    <header class="header-nav">
+        <div class="container flex-box">
+            <nav class="site-nav">
+                <div class="logo-return">
+                    <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+                </div>
+                <ul class="item-nav">
+                    <li class="header-link">
+                        <a class="header-list-link now-title" href="./index.html" style="color: #2196F3;">Студія</a>
+                    </li>
+                    <li class="header-link">
+                        <a class="header-list-link" href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="header-link">
+                        <a class="header-list-link" href="">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul class="contacts">
+                <li class="contacts-item">
+                    <svg class="contacts-img-mail">
+                        <use href="./img/scrypt.svg#mail"></use>
+                    </svg>
+                    <a class="item-nav-text" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="contacts-item">
+                    <svg class="contacts-img-phone">
+                        <use href="./img/scrypt.svg#phone"></use>
+                    </svg>
+                    <a class="item-nav-text" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
+    
+        </div>
+    </header>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="closer-button" data-modal-close>
+                <svg class="close">
+                    <use href="./img/scrypt.svg#close"></use>
+                </svg> 
+            </button>
+            <b class="title-action">Залиште свої дані, ми вам передзвонимо</b>
+            <form name="registration" class="reg-form">
+                <label class="label-reg">
+                    <span class="text-reg">Ім'я</span>
+                    <input class="reg-input" type="text" name="name" placeholder=" ">
+                    <svg class="icon-reg">
+                        <use href="./img/scrypt.svg#person"></use>
+                    </svg>
+                </label>
+                <label class="label-reg">
+                    <span class="text-reg">Телефон</span>
+                    <input class="reg-input" type="tel" name="tel" placeholder=" ">
+                    <svg class="icon-reg">
+                        <use href="./img/scrypt.svg#phone-black"></use>
+                    </svg>
+                </label>
+                <label class="label-reg">
+                    <span class="text-reg">Пошта</span>
+                    <input class="reg-input" type="email" name="email" placeholder=" ">
+                    <svg class="icon-reg">
+                        <use href="./img/scrypt.svg#email-black"></use>
+                    </svg>
+                </label>
+                <label class="label-reg">
+                    <span class="text-reg">Коментар</span>
+                    <textarea class="reg-input reg-comment" name="comment" rows="10" placeholder="Введіть текст"></textarea>
+                </label>
+                <label class="checkbox-reg">
+                    <input class="checkbox" type="checkbox" name="checkbox-contract">
+                    <span class="checkbox-icon"></span>
+                    Погоджуюся з розсилкою та приймаю <a class="link-contract" href="">Умови договору</a>
+                </label>
+            </form>
+            <button class="reg-button" type="submit">Відправити</button>
+        </div>
+    </div>
+ <!--Уникальный контент сайта-->
+   <main>
+    <!--Hero-->
+    <section class="hero">
+       <div class="hero-title-style">
+            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+       </div>
+       <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+    </section>
+    <!--Наши принципы-->
+    <section class="section-principles container">
+        <h2 class="section-principles-title section-title">Наши принцины</h2>
+        <ul class="section-principles-text">
+            <li class="item">
+                <div class="section-principles-pic">
+                    <svg class="principles-img">
+                        <use href="./img/scrypt.svg#antenna"></use>
+                    </svg>
+                </div>
+                <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="princ-text">Ідейні міркування, i навіть початок повсякденної роботи з формування позиції.</p>
+            </li>
+            <li class="item">
+                <div class="section-principles-pic">
+                    <svg class="principles-img">
+                        <use href="./img/scrypt.svg#clock"></use>
+                    </svg>
+                </div>
+                <h3>ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="princ-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            </li>
+            <li class="item">
+                <div class="section-principles-pic">
+                    <svg class="principles-img">
+                        <use href="./img/scrypt.svg#diagram"></use>
+                    </svg>
+                </div>
+                <h3>ПЛАНУВАННЯ</h3>
+                <p class="princ-text">Так само консультація з широким активом значною мірою зумовлює.</p>
+            </li>
+            <li class="item">
+                <div class="section-principles-pic">
+                    <svg class="principles-img">
+                        <use href="./img/scrypt.svg#astronaut"></use>
+                    </svg>
+                </div>
+                <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="princ-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            </li>
+        </ul>
+    </section>
+    <!--Наши возможности, вид деятельности-->
+    <section class="section-work container">
+        <h2 class="section-work-title section-title">Чим ми займаємося</h2>
+        <ul class="section-work-text">
+            <li class="work-wrapper">    
+                <img src="./img/programmer.jpg" alt="Програмирование" width="370">  
+                <p class="work-img-text">
+                    ДЕСКТОПНІ ДОДАТКИ
+                </p>
+            </li>
+            <li class="work-wrapper">
+                <img src="./img/designe.jpg" alt="Дизайн" width="370">
+                <p class="work-img-text">
+                    МОБІЛЬНІ ДОДАТКИ
+                </p>
+            </li>
+            <li class="work-wrapper">
+                <img src="./img/painting.jpg" alt="Раскрашивание" width="370">
+                <p class="work-img-text">
+                    ДИЗАЙНЕРСЬКІ РІШЕННЯ
+                </p>
+            </li>
+        </ul>
+    </section>
+    <!--Наша команда-->
+    <section class="section-team">
+        <div class="section-team-container container">
+            <h2 class="section-team-title section-title">Наша команда</h2>
+            <ul class="section-team-text">
+                <li class="section-team-people">
+                    <img src="./img/igor.jpg" alt="Мужик в очках" width="270">
+                    <h3>Ігор Дем'яненко</h3>
+                    <p>Product Designer</p>
+                    <ul class="team-contacts">
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#instagram"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#twitter"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#linkedin"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </li>
+                <li class="section-team-people">
+                    <img src="./img/olga.jpg" alt="Женщина в очках" width="270">
+                    <h3>Ольга Рєпіна</h3>
+                    <p>Frontend Developer</p>
+                    <ul class="team-contacts">
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#instagram"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#twitter"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#linkedin"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </li>
+                <li class="section-team-people">
+                    <img src="./img/kolya.jpg" alt="Мужик без очков" width="270">
+                    <h3>Микола Тарасов</h3>
+                    <p>Marketing</p>
+                    <ul class="team-contacts">
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#instagram"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#twitter"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#linkedin"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </li>
+                <li class="section-team-people section-paddings">
+                    <img src="./img/misha.jpg" alt="Просто мужик" width="270">
+                    <h3>Михайло Єрмаков</h3>
+                    <p>UI Designer</p>
+                    <ul class="team-contacts">
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#instagram"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#twitter"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#facebook"></use>
+                            </svg>
+                        </li>
+                        <li class="team-links">
+                            <svg class="team-contacts-networks">
+                                <use href="./img/scrypt.svg#linkedin"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--Клиенты-->
+    <section class="container">
+        <h2 class="clients-title">Постійні клієнти</h2>
+        <ul class="clients-logo">
+            <li class="clients-logo-img">
+                <svg class="contacts-logo-svg">
+                    <use href="./img/scrypt.svg#ya-and-go"></use>
+                </svg>
+            </li>
+            <li class="clients-logo-img">
+                <svg class="contacts-logo-svg">
+                    <use href="./img/scrypt.svg#tagline-here"></use>
+                </svg>
+            </li>
+            <li class="clients-logo-img">
+                <svg class="contacts-logo-svg">
+                    <use href="./img/scrypt.svg#company"></use>
+                </svg>
+            </li>
+            <li class="clients-logo-img">
+                <svg class="contacts-logo-svg">
+                    <use href="./img/scrypt.svg#foster-peters"></use>
+                </svg>
+            </li>
+            <li class="clients-logo-img">
+                <svg class="contacts-logo-svg">
+                    <use href="./img/scrypt.svg#brand"></use>
+                </svg>
+            </li>
+            <li class="clients-logo-img">
+                <svg class="contacts-logo-svg">
+                    <use href="./img/scrypt.svg#tag-line"></use>
+                </svg>
+            </li>
+        </ul>
+    </section>
+    </main>
+    <!--Футер-->
+    <footer>
+        <div class="footer container">
+            <div class="footer-links-address">
+                <a class="logo logo-footer" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+                <address class="address-city">
+                    м. Київ, пр-т Лесі Українки, 26
+                </address>
+                <ul class="footer-links">
+                    <li class="footer-link-mail">
+                        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="footer-link-number">
+                        <a href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-networks">
+                <b class="text-networks">ПРИЄДНУЙТЕСЬ</b>
+                <ul class="footer-networks-logo">
+                    <li class="footer-networks-img">
+                        <svg class="footer-networks-img-logo">
+                            <use href="./img/scrypt.svg#instagram"></use>
+                        </svg>
+                    </li>
+                    <li class="footer-networks-img">
+                        <svg class="footer-networks-img-logo">
+                            <use href="./img/scrypt.svg#twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="footer-networks-img">
+                        <svg class="footer-networks-img-logo">
+                            <use href="./img/scrypt.svg#facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="footer-networks-img">
+                        <svg class="footer-networks-img-logo">
+                            <use href="./img/scrypt.svg#linkedin"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+</body>
+
+
+
+</html>
